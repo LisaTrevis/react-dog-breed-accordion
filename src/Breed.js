@@ -12,9 +12,9 @@ const Breed = ({ breed, info, image }) => {
         </button>
       </header>
       {showInfo && (
-        <div className="flex-container">
-          <p>{info}</p>
-          <img className="image" src={image} alt={breed} />
+        <div className="row">
+          <p className="column">{info}</p>
+          <img className="image column" src={image} alt={breed} />
         </div>
       )}
     </article>

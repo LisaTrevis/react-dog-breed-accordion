@@ -92,6 +92,21 @@ p {
   }
 }
 
+/*  global classes */
+
+/* section */
+.section {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: var(--max-width);
+}
+
+@media screen and (min-width: 992px) {
+  .section {
+    width: 95vw;
+  }
+}
+
 /*
 =============== 
 Questions
@@ -148,11 +163,16 @@ main {
   height: 200px;
   object-fit: cover;
 }
-.flex-container {
+.row {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem 2rem;
+}
+@media screen and (max-width: 900px) {
+  .row {
+    flex-direction: column;
+  }
 }
 .btn {
   background: transparent;
